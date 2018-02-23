@@ -1,2 +1,2 @@
 # PythonGroupSnakeGame
-Python Group Game
+Python Group Game [Snake Game]
