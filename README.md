@@ -1,4 +1,4 @@
-# PythonGroupSnakeGame
+# PythonGroupGame
 Python Group Game [Text-based Adventure].
 
 
