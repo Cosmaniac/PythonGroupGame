@@ -1,4 +1,5 @@
-import Scores
+import Scores, Fruit
+
 T1 = Scores.Timer(1)
 
 score = 0
@@ -11,4 +12,6 @@ def draw():
         global score
         score = score + 0.1
         T1.Start()
+    if(Fruit.collide == true):
+        score = score + 100
     print(score)

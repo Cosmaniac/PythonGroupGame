@@ -8,8 +8,8 @@ class Timer:
     def finish(self):
         passedTime = int(minute()) - int(savedTime)
         if(passedTime > totalTime):
-            return true
+            return True
         else:
-            return false
+            return False
         
     
