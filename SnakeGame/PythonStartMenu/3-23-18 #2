@@ -1,4 +1,4 @@
-lass Buttons(object):
+class Buttons(object):
     def __init__(self,x,y,w,h,v,n,hov):
         self.x = x
         self.y = y
