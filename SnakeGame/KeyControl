@@ -1,39 +1,45 @@
-timesPressedD = 0
-timesPressedS = 0
-timesPressedA = 0
-timesPressedW = 0
-right = 0
-left = 0
-down = 0
-up = 0
+right = 1
+left = 1
+down = 1
+up = 1
+xspeed = 0
+yspeed = 0
+x = 1000
+y = 1000
 
 
 def setup():
     size(2000, 2000)
-    frameRate(100)
+    photo = loadImage("GRASS.jpg")
+    frameRate(99999)
+    background(0)
+   
+
 
 
 def draw():
-    background(100)
-    global timesPressedD
-    global timesPressedA
-    global timesPressedS
-    global timesPressedW
+    photo = loadImage("GRASS.jpg")
+    background(0)
     global right
     global left
     global up
     global down
-    x = (timesPressedD * 20) + (timesPressedA * -20)
-    y = (timesPressedS * 20) + (timesPressedW * -20)
+    global xspeed
+    global yspeed
+    global x
+    global y
+    """x = (timesPressedD * 20) + (timesPressedA * -20)
+    y = (timesPressedS * 20) + (timesPressedW * -20)"""
+    rect(x,y,20,20)
+    x += xspeed
+    y += yspeed
     stroke(255)
     if keyPressed:
         if key == 'd' or key == 'D':
             if (left == 1):
-                rect(x - 20, y, 20, 20)
-                timesPressedA +=1
+                xspeed = 20
+                yspeed = 0
             elif (left == 0):
-                rect(x + 20, y, 20, 20)
-                timesPressedD += 1
                 right = 1
                 left = 0
                 down = 0
@@ -41,11 +47,9 @@ def draw():
     if keyPressed:
         if key == 's' or key == 'S':
              if (up == 1):
-                rect(x, y - 20, 20, 20)
-                timesPressedW +=1
+                yspeed = 20
+                xspeed = 0
              elif (up == 0):
-                rect(x, y + 20, 20, 20)
-                timesPressedS += 1
                 right = 0
                 left = 0
                 down = 1
@@ -53,11 +57,11 @@ def draw():
     if keyPressed:
         if key == 'a' or key == 'A':
             if(right == 1):
-                rect(x+20, y, 20, 20)
-                timesPressedD +=1
+                xspeed = -20
+                yspeed = 0
             elif(right == 0):
-                rect(x - 20, y, 20, 20)
-                timesPressedA += 1
+                #xspeed = 20
+               # yspeed = 0
                 right = 0
                 left = 1
                 down = 0
@@ -65,11 +69,11 @@ def draw():
     if keyPressed:
         if key == 'w' or key == 'W':
             if (down == 1):
-                rect(x, y+20, 20, 20)
-                timesPressedS +=1
+                yspeed = -20
+                xspeed = 0
             elif (down == 0):
-                rect(x, y - 20, 20, 20)
-                timesPressedW += 1
+                #xspeed = 0
+               # yspeed = 20
                 right = 0
                 left = 0
                 down = 0
