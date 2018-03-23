@@ -8,3 +8,4 @@ The player will eat small items in order to grow longer and move faster, until t
 ![SnakeGame](https://github.com/Cosmaniac/PythonGroupGame/blob/master/SnakeGame/SnakeGame.png)
 
 https://pythonspot.com/snake-with-pygame/
+https://gist.github.com/sanchitgangwar/2158089
