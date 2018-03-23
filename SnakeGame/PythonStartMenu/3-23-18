@@ -1,0 +1,20 @@
+import Buttons
+b1 = Buttons.Buttons(660,340,570,350,5,'  START',True)
+b2 = Buttons.Buttons(660,1000,570,350,5,'OPTIONS',True)
+
+def setup():
+  size(2000,1575)
+  background(0,100,0)
+  
+def draw():
+  background(0,100,0)
+  fill(0,200,0)
+  rect(35,110,1927,1445,10)
+  fill(200,240,0)
+  textSize(75)
+  text("[Python Snake Game]", 630,80)
+  fill(0)
+  b1.hover()
+  b1.display()
+  b2.hover()
+  b2.display()
