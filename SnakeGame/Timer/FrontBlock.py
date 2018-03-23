@@ -1,2 +1,1 @@
-class Front:
-    
+'''class Front:

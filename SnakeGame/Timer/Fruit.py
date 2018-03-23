@@ -16,8 +16,8 @@ class Fruits:
 
     def impact(self):
         collide = False
-        if(xpos == FrontBlock.xpos and ypos == FrontBlock.ypos + 20 or xpos=FrontBlock.xpos and ypos + 20 == FrontBlock.pos or xpos == FrontBlock.xpos + 20 and ypos == FrontBlock.ypos or xpos + 20 == FrontBlock.xpos and ypos == FrontBlock.ypos):
-            collide = True
+        '''if(xpos == FrontBlock.xpos and ypos == FrontBlock.ypos + 20 or xpos=FrontBlock.xpos and ypos + 20 == FrontBlock.pos or xpos == FrontBlock.xpos + 20 and ypos == FrontBlock.ypos or xpos + 20 == FrontBlock.xpos and ypos == FrontBlock.ypos):
+            collide = True'''
 
     def spawn(self):
         if(collide == True):
