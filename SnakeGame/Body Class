@@ -1,0 +1,6 @@
+class Body
+size(100,100)
+
+stroke(246,255,0)
+fill(84,255,0)
+rect(40,40,20,20)
