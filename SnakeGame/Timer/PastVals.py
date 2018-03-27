@@ -1,18 +1,19 @@
 import Fruit
 
+
+    
 class Follow:
     def __init__(self, x, y):
         self.x
         self.y
+
+    X = [x]
+    Y = [y]        
     
-    coord = (x, y) 
-    a = [coord]
-    if(Fruit.collide == True):
-        snakeLength +=1
+    def update(tempX, tempY, snakeLength): 
+        X.insert(0, tempX)
+        if(snakeLength <= len(X)):
+            X.remove(len(X)-1)
+            Y.remove(len(Y)-1)
     
-    def update(tempC, snakeLength):
-        a.insert(0, tempC)
-        if(snakeLength <= (len(a)):
-            a.remove(len(a)-1)
-            
     
